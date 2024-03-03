@@ -5,7 +5,6 @@
  * @array: array
  * @size: array size
  **/
-
 void selection_sort(int *array, size_t size)
 {
 	unsigned int i, j, min;
@@ -30,5 +29,4 @@ void selection_sort(int *array, size_t size)
 			print_array(array, size);
 		}
 	}
-
 }
