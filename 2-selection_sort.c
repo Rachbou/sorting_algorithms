@@ -2,13 +2,13 @@
 
 /**
  * selection_sort - sort array using selection sort algorithm
- * @array: array
+ * @array: array to be sorted
  * @size: array size
  **/
 void selection_sort(int *array, size_t size)
 {
 	unsigned int i, j, min;
-	int swap;
+	int interm;
 
 	if (array == NULL || size < 2)
 		return;
@@ -23,9 +23,9 @@ void selection_sort(int *array, size_t size)
 		}
 		if (min != i)
 		{
-			swap = array[i];
+			interm = array[i];
 			array[i] = array[min];
-			array[min] = swap;
+			array[min] = interm;
 			print_array(array, size);
 		}
 	}
